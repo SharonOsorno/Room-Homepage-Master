@@ -8,10 +8,10 @@
   }
 
 *{
-    text-decoration: none;
     padding: 0;
     margin: 0;
-    box-sizing: content-box;   
+    box-sizing: content-box; 
+    text-decoration: none;  
 }
 body{
     font-size: 12px;
@@ -26,7 +26,6 @@ body{
 }
 
 
-/*header*/
 header{
     z-index: 2;
     left: 4em;
@@ -38,25 +37,26 @@ header nav {
 header nav .menu a{   
    margin: 0 1em;  
 }
-/*slider*/
-.carrusel .text {
+
+
+.carrusel .carrusel-text{
     display: flex;
     align-items: center;    
 }
-.carrusel .text img {
+.carrusel .carrusel-text img {
     width: 750px;
     height:auto; 
 }
-.carrusel .text article {
+.carrusel .carrusel-text article {
     margin: 2em;    
 }
-.carrusel .text article h1{
+.carrusel .carrusel-text article h1{
 font-weight: 700;
 color: var(--Black);
 font-size: 30px;
 margin-bottom: 1em;
 }
-.carrusel .text article a{
+.carrusel .carrusel-text article a{
     display: flex;
     align-items: center;
     color: var(--Black);
@@ -66,25 +66,28 @@ margin-bottom: 1em;
     text-decoration: none;
     margin-top: 4em;
 }
-.carrusel .text article img{
+.carrusel .carrusel-text article img{
     width: 3em;
     margin-left: 2em;
 }
-
-.carrusel .content .arrows{
- position: absolute; 
- top: 33.7em;
- left: 62.5em;
- width: 6em;
- 
-}
 .carrusel .content .arrows a{
-    display: flex;
-    justify-items: center;
+    display: flex;    
     background-color: var(--Black);
-    padding: 3em;
+    opacity: 1;
+    padding:  3em 0em;
+    display: flex;
+    bottom:250px;
+    top: 404.8px;
 }
-
+.carrusel .content .arrows{
+    display: flex;
+}
+.carrusel .content .carousel-control-prev{
+    left: 62.5em;
+}
+.carrusel .content .carousel-control-next{
+    right: 12em;
+}
 
 .about{
     display: flex;
@@ -109,13 +112,54 @@ margin-bottom: 1em;
     letter-spacing: 0.5em;
 }
 
-
-
-@media (min-width: 320px) and (max-width: 1024px) {
-    .carrusel .text {
-        flex-direction: column;            
+@media (min-width: 425px) and (max-width:800px) {
+    header{
+        display: flex;
+        flex-direction: row-reverse;
     }
-    .carrusel .text img {
-       width: 100%;  
+    header nav {
+        margin-left: 0em;
+        background: var(--Dark-Gray);         
+    }
+    header nav .menu{
+        display: flex;
+        flex-direction: row;       
     }    
+    header nav .menu a{   
+       margin: 0 1.5em;
+    }    
+    .carrusel .carrusel-text{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .carrusel .carrusel-text img {
+        width: 100%;       
+    }
+    .carrusel .carrusel-text article {
+        flex-basis: 50%;
+        margin: 4em;    
+    }
+    .carrusel .content .arrows a{
+        top:415px;  
+        bottom: 400px;      
+    }
+    .carrusel .content .carousel-control-prev{
+        left: 45em;
+    }
+    .carrusel .content .carousel-control-next{
+        right: 0em;
+    } 
+    .about .content{    
+        flex-wrap: wrap;
+        justify-content: center;  
+    }
+    .about .content img{
+        width: 100%;
+        height:auto;    
+    }
+    .about .content article{   
+        flex-basis: 50%;
+        margin: 4em;   
+    }    
+    
 }
