@@ -2,58 +2,106 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="./styles/main.css">
   <title>Frontend Mentor | Room homepage</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  
+ 
 </head>
 <body>
-  Home
-  Shop
-  About
-  Contact
+  <main class="home">
+    <div>
+      <header class="navbar navbar-expand-lg navbar-light d-flex justify-content-between col-lg-8 col-md-4 col-sm-2 
+      d-flex flex-lg-row flex-sm-row-reverse">
+        <img src="./images/logo.svg" alt="Logo">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <nav class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav menu">
+            <a class="nav-item nav-link active text-white" href="#">Home<span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link text-white" href="#">Shop</a>
+            <a class="nav-item nav-link text-white" href="#">About</a>
+            <a class="nav-item nav-link text-white" href="#">Contact</a>
+          </div>
+        </nav>
+      </header>
 
-  Discover innovative ways to decorate
+      <section class="carrusel">
+        <div class="carrusel-content">
+          <div class="btn-arrow">
+            <a href="#"><img src="./images/icon-angle-left.svg" alt=""></a>
+            <a href="#"><img src="./images/icon-angle-right.svg" alt=""></a>
+          </div> 
+         <div class="slider">
+          <div class="row">
+            <picture><img class="img-fluid" src="./images/desktop-image-hero-1.jpg" alt=""></picture>
+            <article class="txt-carrusel">
+              <h1>Discover innovative ways to decorate</h1>
+              <p>We provide unmatched quality, comfort, and style for property owners across the country.
+                Our experts combine form and function in bringing your vision to life. Create a room in your
+                own style with our collection and make your property a reflection of you and what you love.</p>
 
-  We provide unmatched quality, comfort, and style for property owners across the country. 
-  Our experts combine form and function in bringing your vision to life. Create a room in your 
-  own style with our collection and make your property a reflection of you and what you love.
+              <div class="btn-shop">
+                <a href="#">SHOP NOW<img src="./images/icon-arrow.svg" alt=""></a>
+              </div>
+            </article>
 
-  Shop now
+          </div>
+          <div class="row">
+            <picture><img class="img-fluid" src="./images/desktop-image-hero-2.jpg" alt=""></picture>
+            <article class="txt-carrusel">
+              <h1>We are available all across the globe</h1>
+              <p>With stores all over the world, it's easy for you to find furniture for your home or place of business.
+                Locally, we’re in most major cities throughout the country. Find the branch nearest you using our
+                store locator. Any questions? Don't hesitate to contact us today.</p>
 
-  We are available all across the globe
+              <div class="btn-shop">
+                <a href="#">SHOP NOW<img src="./images/icon-arrow.svg" alt=""></a>
+              </div>
+            </article>
 
-  With stores all over the world, it's easy for you to find furniture for your home or place of business. 
-  Locally, we’re in most major cities throughout the country. Find the branch nearest you using our 
-  store locator. Any questions? Don't hesitate to contact us today.
+          </div>
+          <div class="row">
+            <picture><img class="img-fluid" src="./images/desktop-image-hero-3.jpg" alt=""></picture>
+            <article class="txt-carrusel">
+              <h1>Manufactured with the best materials</h1>
+              <p> Our modern furniture store provide a high level of quality. Our company has invested in advanced
+                technology
+                to ensure that every product is made as perfect and as consistent as possible. With three decades of
+                experience in this industry, we understand what customers want for their home and office.
+              </p>
+              <div class="btn-shop">
+                <a href="#">SHOP NOW<img src=".images/icon-arrow.svg" alt=""></a>
+              </div>
+            </article>
+          </div>
+         </div>
+                       
+        </div>        
+      </section>
 
-  Shop now
+    </div>
+  </main>
 
-  Manufactured with the best materials
-
-  Our modern furniture store provide a high level of quality. Our company has invested in advanced technology 
-  to ensure that every product is made as perfect and as consistent as possible. With three decades of 
-  experience in this industry, we understand what customers want for their home and office.
-
-  Shop now
-
-  About our furniture
-
-  Our multifunctional collection blends design and function to suit your individual taste.
-  Make each room unique, or pick a cohesive theme that best express your interests and what
-  inspires you. Find the furniture pieces you need, from traditional to contemporary styles
-  or anything in between. Product specialists are available to help you create your dream space.
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <section class="about">
+    <div class="row">
+      <picture><img class="img-fluid" src="./images/image-about-dark.jpg" alt=""></picture>
+      <article>
+        <h3>ABOUT OUR FURNITURE</h3>
+        <p>Our multifunctional collection blends design and function to suit your individual taste.
+          Make each room unique, or pick a cohesive theme that best express your interests and what
+          inspires you. Find the furniture pieces you need, from traditional to contemporary styles
+          or anything in between. Product specialists are available to help you create your dream space.</p>
+      </article>
+      <picture><img class="img-fluid" src="./images/image-about-light.jpg" alt=""></picture>
+    </div>
+  </section>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>
