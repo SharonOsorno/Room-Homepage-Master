@@ -14,8 +14,8 @@
     text-decoration: none;  
 }
 body{
-    font-size: 12px;
-    line-height: 1.5em; 
+    font-size: 14px;
+    line-height: 1.8em; 
     color: var(--Dark-Gray);
     font-family: 'Spartan', sans-serif;
     font-weight: 500;       
@@ -54,7 +54,7 @@ header nav .menu a{
 font-weight: 700;
 color: var(--Black);
 font-size: 30px;
-margin-bottom: 1em;
+margin-bottom: 0.5em;
 }
 .carrusel .carrusel-text article a{
     display: flex;
@@ -64,7 +64,7 @@ margin-bottom: 1em;
     text-transform: uppercase;
     letter-spacing: 0.5em;
     text-decoration: none;
-    margin-top: 4em;
+    margin-top: 2em;
 }
 .carrusel .carrusel-text article img{
     width: 3em;
@@ -77,16 +77,16 @@ margin-bottom: 1em;
     padding:  3em 0em;
     display: flex;
     bottom:250px;
-    top: 404.8px;
+    top: 393px;
 }
 .carrusel .content .arrows{
     display: flex;
 }
 .carrusel .content .carousel-control-prev{
-    left: 62.5em;
+    left: 53.5em;
 }
 .carrusel .content .carousel-control-next{
-    right: 20em;
+    right: 18em;
 }
 
 .about{
